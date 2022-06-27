@@ -1,22 +1,18 @@
-# Developing AI Agent with PEAS Description
-
-## AIM
-
+### EX.NO: 01
+### DATE: 04-04-2022
+# <p align="center"> Developing AI Agent with PEAS Description </p>
+## AIM:
 To find the PEAS description for the given AI problem and develop an AI agent.
 
-## THEORY
+## THEORY:
 A vacuum-cleaner world with just two locations.
-
 <br/>Each location can be clean or dirty.
-
 <br/>The agent can move left or right and can clean the square that it occupies.
 
 ## PEAS DESCRIPTION
 | Agent Type  | Performance Measure | Environment  | Actuators | Sensors |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | Vaccum-Cleaner  | Cleanliness, Number of Movements  | Rooms  | Wheels, suction tool  | Location, Cleanliness |
-
-
 
 ## DESIGN STEPS
 ### STEP 1:
@@ -34,7 +30,11 @@ The agent should detect the location and suck if the location it is dirty,else i
 ### STEP 5:
 The performance is measured with the number of movements and the cleaning action of the agent.
 
-## PROGRAM
+## PROGRAM:
+```python 
+DEVELOPED BY: VIGNESHWAR S 
+REGISTER NO: 212220230058
+```
 ```python3
 import random
 class Thing:
@@ -258,7 +258,6 @@ class TrivialVacuumEnvironment(Environment):
         """Agents start in either location at random."""
         return random.choice([loc_A, loc_B, loc_C, loc_D, loc_E, loc_F, loc_G, loc_H, loc_I])
 
-
 if __name__ == "__main__":
     agent = TableDrivenVacuumAgent()
     environment = TrivialVacuumEnvironment()
@@ -271,12 +270,8 @@ if __name__ == "__main__":
     print('\033[1m' + 'Agent Performance\n' + '\033[0m',agent.performance)
 ```
 
-## OUTPUT
-
-
+## OUTPUT:
 ![Untitled3 ipynb - Colaboratory - Google Chrome 4_7_2022 8_09_23 AM](https://user-images.githubusercontent.com/77089276/162231985-32b5fe4b-5cbc-4e84-b2b0-b2b43dccc282.png)
 
-
-## RESULT
-
+## RESULT:
 Thus, an AI agent was developed and PEAS description is given. 
